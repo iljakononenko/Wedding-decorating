@@ -11,7 +11,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header class="d-none">
       <div class="d-flex align-content-center justify-content-center">
         <div>
           <a class="company_name_link" href="./index.html"
@@ -24,42 +24,38 @@
         <ul
           class="nav nav-pills flex-wrap justify-content-center align-items-center"
         >
-          <li class="nav-link">Home</li>
-          <li class="separator">|</li>
-          <li class="nav-link">Services</li>
-          <li class="separator">|</li>
-          <li class="nav-link">About us</li>
-          <li class="separator">|</li>
-          <li class="nav-link">Gallery</li>
+          <li class="nav-link separator">Home</li>
+          <!-- <li class="separator separator-1">|</li> -->
+          <li class="nav-link separator">Services</li>
+          <!-- <li class="separator separator-2">|</li> -->
+          <li class="nav-link separator separator-3">About us</li>
+          <!-- <li class="separator separator-3 d-none">|</li> -->
+          <li class="nav-link separator separator-4">Gallery</li>
+          <!-- <li class="separator separator-4 d-none">|</li> -->
           <li class="nav-link">Contact us</li>
         </ul>
       </nav>
     </header>
     <main>
       <div class="position-relative bg-video-wrapper">
-        <div class="background-video-container">
-          <video
-            class="background-video-hosted elementor-html5-video"
-            autoplay=""
-            muted=""
-            playsinline=""
-            loop=""
-            src="./img/Something-Different-Video-light.mp4"
-            style="width: 100%; height: 100%; object-fit: cover"
-          ></video>
+        <div class="img-wrapper">
+          <img class="d-md-none" src="./img/main.JPG" alt="">
+          <img class="d-none d-md-block" src="./img/main.png" alt="">
         </div>
         <div class="background-overlay"></div>
         <div
           class="position-absolute h-100 w-100 d-flex flex-column justify-content-center align-items-center text-center"
           style="top: 0"
         >
-          <h3 class="slogan">We make every event special</h3>
+          <h3 class="slogan">
+            Handling the stress, so your event is a success!
+          </h3>
           <p class="call-to-action-button">Contact us</p>
         </div>
       </div>
       <div id="header-fixer"></div>
       <section id="about_us">
-        <h3 class="text-center display-5 fst-italic">About us</h3>
+        <!-- <h3 class="text-center display-5 fst-italic">About us</h3>
         <div class="photos">
           <div class="position-relative">
             <div class="main_photo">
@@ -69,20 +65,150 @@
               <img src="./img/homepage_pic_2.jpg" alt="" />
             </div>
           </div>
-        </div>
-        <div class="container description py-5">
-          <h2 class="fst-italic px-2 mb-4">
-            Let us create a custom event you'll never forget
+        </div> -->
+        <div class="container description p-3 text-center">
+          <!-- <h2 class="fst-italic px-2 mb-4">Welcome to Amour events</h2> -->
+          <h2 class="">
+            Welcome to Amour events we are a family owned business, providing
+            full service rental and design. From Set up to clean up, so you can
+            be a guest at your own event.
           </h2>
-          <p class="px-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            voluptatem, atque non in accusantium hic.
-          </p>
-          <p class="px-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            voluptatem, atque non in accusantium hic. Modi voluptatem, atque non
-            in accusantium hic.
-          </p>
+          <h2 class="">
+            We offer a range of services personalized to meet the vision and
+            budget of any client for every event. We start with a meeting to
+            understand your vision, taste and style.Then we do all the work so
+            that our clients and their guests can sit back and enjoy the event.
+            We look forward to working with you !
+          </h2>
+        </div>
+      </section>
+      <section id="decorations" class="secondary-bg2 p-3">
+        <div class="decorations">
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_1.png"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Wedding Table Decoration</div>
+          </div>
+
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_2.JPG"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Cake Table Decor</div>
+          </div>
+
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_3.png"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Dinnerware</div>
+          </div>
+
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_4.PNG"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Stage / center table</div>
+          </div>
+
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_5.PNG"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Flower decoration</div>
+          </div>
+
+          <div class="decoration">
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/decorations/decoration_6.PNG"
+                alt=""
+              />
+            </div>
+            <div class="decoration_text">Welcome signs</div>
+          </div>
+
+        </div>
+      </section>
+      <section id="services">
+        <h2 class="text-center mb-5">Services</h3>
+        <div class="services">
+          
+          <div class="service">
+            <h2 class="service-title">Wedding ceremony</h3>
+            <div class="service-text">Isle Decoration: isle runner, candles, floral etc.</div>
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/services/service_1.PNG"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="service">
+            <h2 class="service-title">Outdoor events</h3>
+            <div class="service-text">Isle decoration, table design and decor.</div>
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/services/service_2.JPG"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="service">
+            <h2 class="service-title">Showers</h3>
+            <div class="service-text">Bridal and baby shower.</div>
+            <div class="img-wrapper">
+              <img
+                class="mb-3"
+                src="./img/services/service_3.JPG"
+                alt=""
+              />
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section id="about_us" class="secondary-bg2">
+        <div class="py-5">
+          <h2 class="text-center mb-3">About us</h2>
+          <div class="d-flex px-3">
+            <div class="col-5 img-wrapper">
+              <img src="./img/about.png" alt="">
+            </div>
+            <div class="col ms-4">
+              <p>I am Mila the owner of Amour Events. 
+                I am being the oldest of 11 always had a way of organizing and leading. 
+                I love hosting and planning events. 
+                After planning and coordinating baby showers for my friends and weddings for siblings for many years I decided to start a business in doing what I love and do best.</p>
+            </div>
+            
+          </div>
         </div>
       </section>
       <section id="contact_us">
