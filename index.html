@@ -24,19 +24,19 @@
         <ul
           class="nav nav-pills flex-wrap justify-content-center align-items-center"
         >
-          <li class="nav-link separator">Home</li>
+          <li class="nav-link separator" data-link="home">Home</li>
           <!-- <li class="separator separator-1">|</li> -->
-          <li class="nav-link separator">Services</li>
+          <li class="nav-link separator" data-link="services">Services</li>
           <!-- <li class="separator separator-2">|</li> -->
-          <li class="nav-link separator separator-3">About us</li>
+          <li class="nav-link separator separator-3" data-link="about_us">About us</li>
           <!-- <li class="separator separator-3 d-none">|</li> -->
-          <li class="nav-link separator separator-4">Gallery</li>
+          <li class="nav-link separator separator-4" data-link="gallery">Gallery</li>
           <!-- <li class="separator separator-4 d-none">|</li> -->
-          <li class="nav-link">Contact us</li>
+          <li class="nav-link" data-link="contact_us">Contact us</li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="home">
       <div class="position-relative bg-video-wrapper">
         <div class="img-wrapper">
           <img class="d-md-none" src="./img/main.JPG" alt="">
@@ -54,7 +54,7 @@
         </div>
       </div>
       <div id="header-fixer"></div>
-      <section id="about_us">
+      <section id="introduction">
         <!-- <h3 class="text-center display-5 fst-italic">About us</h3>
         <div class="photos">
           <div class="position-relative">
