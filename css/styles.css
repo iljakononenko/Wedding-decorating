@@ -257,6 +257,7 @@ section#decorations {
 
 section#services {
   padding-top: 40px !important;
+  padding-bottom: 16px;
 }
 
 #decorations h2 {
@@ -274,7 +275,7 @@ section#services {
   font-style: italic;
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 36px;
   padding: 16px;
   background-color: #000;
   color: #fff;
