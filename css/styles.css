@@ -25,6 +25,7 @@ header {
 ul.nav.nav-pills li.nav-link {
   position: relative;
   color: #ce6561;
+  cursor: pointer;
 }
 
 ul.nav.nav-pills li.separator {

@@ -4,19 +4,13 @@ $(document).ready(function () {
   $("nav .nav-link").on("click", function (e) {
     let target = $(this).attr("data-link");
 
-    if (window.location.pathname.includes("index")) {
-      if (target == "gallery") {
-        window.location.href = window.location.pathname.replace(
-          "index",
-          "gallery"
-        );
+    if (window.location.pathname.includes("gallery")) {
+      if (target != "gallery") {
+        window.location.href = window.location.pathname.replace("gallery", "");
       }
     } else {
-      if (target != "gallery") {
-        window.location.href = window.location.pathname.replace(
-          "gallery",
-          "index"
-        );
+      if (target == "gallery") {
+        window.location.href = window.location.pathname + "gallery";
       }
     }
 
