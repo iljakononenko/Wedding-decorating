@@ -325,3 +325,22 @@ section#about_us .img-wrapper img {
   object-fit: cover;
   border-radius: 16px;
 }
+
+main.h-100 {
+  min-height: 100vh;
+}
+
+#gallery-page h2 {
+  font-size: 36px;
+  font-style: italic;
+  font-family: didot-italic;
+  text-align: center;
+}
+
+.gallery-item {
+  margin-bottom: 12px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+}

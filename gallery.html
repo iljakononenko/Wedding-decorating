@@ -40,8 +40,24 @@
         </ul>
       </nav>
     </header>
+    <div class="position-absolute bg-video-wrapper" style="z-index: -1">
+      <div class="img-wrapper">
+        <img src="./img/gallery-background.jpg" alt="" style="opacity: 0.3" />
+      </div>
+    </div>
     <div id="header-fixer"></div>
-    <main>Gallery</main>
+    <main id="gallery-page" class="h-100">
+      <div class="p-3 mt-3">
+        <h2 class="text-start">Gallery</h2>
+        <div class="mt-3">
+          <div class="d-flex">
+            <div class="col gallery-col gallery-col-1"></div>
+            <div class="col gallery-col gallery-col-2 mx-3"></div>
+            <div class="col gallery-col gallery-col-3"></div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer>
       <div class="text-center">
@@ -54,5 +70,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/gallery_script.js"></script>
   </body>
 </html>
