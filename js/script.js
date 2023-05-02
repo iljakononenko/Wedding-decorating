@@ -1,7 +1,7 @@
 $(document).ready(function () {
   fixHeader();
 
-  $("nav .nav-link").on("click", function (e) {
+  $("nav .nav-link, .call-to-action-button").on("click", function (e) {
     let target = $(this).attr("data-link");
 
     if (window.location.pathname.includes("gallery")) {
@@ -28,6 +28,10 @@ $(document).ready(function () {
       0
     );
   });
+
+  fixServicesHeaderHeight();
+
+  $(window).on("resize", fixServicesHeaderHeight);
 });
 
 function fixHeader() {
@@ -38,4 +42,19 @@ function fixHeader() {
   $(window).resize(function () {
     $("#header-fixer").css("paddingTop", $("header").outerHeight());
   });
+}
+
+function fixServicesHeaderHeight() {
+  if ($(window).outerWidth() > 768) {
+    let maxHeight = 0;
+    $(".decoration-header").each(function (elem) {
+      if ($(this).outerHeight() > maxHeight) {
+        maxHeight = $(this).outerHeight();
+      }
+    });
+
+    $(".decoration-header").css("min-height", maxHeight);
+  } else {
+    $(".decoration-header").css("min-height", "inherit");
+  }
 }
