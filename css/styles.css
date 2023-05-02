@@ -53,6 +53,14 @@ ul.nav.nav-pills li.nav-link.separator::after {
   width: 100%;
 }
 
+.footer_data {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  width: 100%;
+}
+
 .bg-video-wrapper {
   z-index: 2;
   height: 100vh;
