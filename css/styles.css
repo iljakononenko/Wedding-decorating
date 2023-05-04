@@ -294,6 +294,7 @@ section#services {
   font-weight: bold;
   font-size: 36px;
   padding: 16px;
+  text-transform: uppercase;
 }
 
 .decoration-text {
